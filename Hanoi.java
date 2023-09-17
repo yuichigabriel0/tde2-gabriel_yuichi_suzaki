@@ -140,6 +140,16 @@ public class Hanoi {
                 h.HanoiTroca(reverso, auxiliar, destino);
             }
             System.out.println("======( J O G O  A U T O M Á T I C O )======");
+            if(origem.getComeco() != null){
+                h.Hanoiverifica(reverso,origem);
+
+            }
+            if(destino.getComeco() != null){
+                h.Hanoiverifica(reverso,destino);
+            }
+            if(auxiliar.getComeco() != null){
+                h.Hanoiverifica(reverso,auxiliar);
+            }
 
             origem.imprime();
             destino.imprime();
